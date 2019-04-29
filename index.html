@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="title icon" type="image/png" href="images/title-img.png">
-
+    <link rel="stylesheet" href="style.scss">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
     <title>Klevamane</title>
   </head>
   <body>
@@ -80,17 +81,102 @@
     <!-- SKILLS -->
     <section class="bg-light p-5">
       <div class="container-fluid">
+
+        <!-- TITLE -->
         <div class="row">
-          <div class="col">
-            <h1>Skills</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, doloribus?</p>
+          <div class="col text-center">
+            <h1 class="text-warning display-2">Skills</h1>
+            <p class="lead text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, doloribus?</p>
+          </div>
+        </div>
+        <!-- END OF TITLE -->
+
+        <div class="row text-center">
+          <!-- col-lg-4 means after large screen size each column will take 1/3 of the entire row -->
+          <!-- mx-auto to center itemx -->
+          <!-- first column -->
+          <div class="col-lg-4 col-sm-10 mx-auto mb-4">
+            <i class="fas fa-desktop fa-6x text-warning mb-3"></i>
+            <h1 class="text-secondary">Development</h1>
+            <p class="my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. At provident vero doloribus expedita sit tempora!</p>
+            <a href="" class="btn btn-outline-warning">Learn more</a>
+          </div>
+
+          <!-- second column -->
+          <div class="col-lg-4 col-sm-10 mx-auto mb-4">
+              <i class="fas fa-edit fa-6x text-warning mb-3"></i>
+              <h1 class="text-secondary">Design</h1>
+              <p class="my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. At provident vero doloribus expedita sit tempora!</p>
+              <a href="" class="btn btn-outline-warning">Learn more</a>
+            </div>
+
+            <!-- third column -->
+          <div class="col-lg-4 col-sm-10 mx-auto mb-4">
+            <i class="fas fa-cogs fa-6x text-warning mb-3"></i>
+            <h1 class="text-secondary">Creativity</h1>
+            <p class="my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. At provident vero doloribus expedita sit tempora!</p>
+            <a href="" class="btn btn-outline-warning">Learn more</a>
           </div>
         </div>
       </div>
     </section>
-
     <!-- END OF SKILLS -->
 
+    <!-- PROJECT -->
+
+    <section class="p-5">
+      <div class="container-fluid">
+        <!-- TITLE -->
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-warning display-2">Projects </h1>
+            <p class="lead text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, doloribus?</p>
+          </div>
+        </div>
+        <!-- END OF TITLE -->
+        
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <!-- img-fluid enables the image to fit its container, it has a max-height of auto -->
+            <!-- but we'd use img-thumbnail here, checkout the docs -->
+            <img src="images/project1.jpg" class="img-thumbnail rounded" alt="">
+            <h2 class="text-warning my-3">Kleva-fix</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusantium?</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+    
+            <!-- img-fluid enables the image to fit its container, it has a max-height of auto -->
+            <!-- but we'd use img-thumbnail here, checkout the docs -->
+            <img src="images/project1.jpg" class="img-thumbnail rounded" alt="">
+            <h2 class="text-warning my-3">Kleva-fix</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusantium?</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <!-- img-fluid enables the image to fit its container, it has a max-height of auto -->
+            <!-- but we'd use img-thumbnail here, checkout the docs -->
+            <img src="images/project1.jpg" class="img-thumbnail rounded" alt="">
+            <h2 class="text-warning my-3">Kleva-fix</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusantium?</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <!-- img-fluid enables the image to fit its container, it has a max-height of auto -->
+            <!-- but we'd use img-thumbnail here, checkout the docs -->
+            <img src="images/project1.jpg" class="img-thumbnail rounded" alt="">
+            <h2 class="text-warning my-3">Kleva-fix</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusantium?</p>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <!-- END OF PROJECT -->
+
+
+    <!-- TEAM -->
+
+    <!-- <section class="p-sm-5 p-2 bg-secondary"></section> -->
+    <!-- END OF TEAM -->
+    
     <!-- Optional JavaScript --> 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
