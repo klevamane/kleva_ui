@@ -1,0 +1,39 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eee
+}
+
+.custom_sidebar {
+    /* 100vh means it will be stretch top to bottomo of the view height */
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0, 0, 0, .9)), url(images/img1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 7px 25px #999
+}
+
+.custom-bottom-border {
+    border-bottom: 1px groove #eee
+}
+
+.custom-sidebar-link {
+    transition: all .4s;
+}
+.custom-sidebar-link:hover {
+    background-color: #444;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.current {
+    background-color: #f44366;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px #111;
+}
+
+.current:hover {
+    background-color: #f66436
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px #111;
+}
