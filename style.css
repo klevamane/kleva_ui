@@ -3,7 +3,7 @@ body {
   background-color: #eee
 }
 
-.custom_sidebar {
+.custom-sidebar {
     /* 100vh means it will be stretch top to bottomo of the view height */
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,.7), rgba(0, 0, 0, .9)), url(images/img1.jpeg);
@@ -33,7 +33,70 @@ body {
 }
 
 .current:hover {
-    background-color: #f66436
+    background-color: #f66436;
     border-radius: 7px;
     box-shadow: 2px 5px 20px #111;
+}
+
+.custom-search-input {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #999
+    transitionL all .4s;
+     
+}
+
+.custom-search-input:focus  {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #dc3545;
+
+}
+
+/* change the placeholder colour on focus */
+/* .custom-search-input:focus::-webkit-input-placeholder {
+    color: rgb(214, 102, 102);
+} */
+
+
+.custom-search-button {
+    border-radius: 50%;
+    padding: 10px 16px;
+    transition: all .4s;
+}
+
+.custom-search-button:hover {
+    background-color: rgb(134, 51, 51);
+    transform: translateY(-1px)
+
+}
+
+.custom-icon-parent {
+    position: relative;
+}
+
+
+.custom-icon-bullet::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    height: 12px;
+    width: 12px;
+    background-color: #f44366;
+    border-radius: 50%;
+}
+
+
+/* for smaller screens */
+@media(max-width: 768px) {
+    .custom-sidebar {
+        position: static;
+        height: auto;
+    }
+
+    .custom-top-navbar {
+        position: static;
+    }
 }
