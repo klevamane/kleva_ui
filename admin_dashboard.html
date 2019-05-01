@@ -313,7 +313,7 @@
             <div class="row mb-5">
                 <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 col-xl-6 mb-4 mb-xl-0">
                             <h3 class="text-muted text-center mb-3">Staff salary</h3>
                             <table class="table bg-light text-center table-striped">
                                 <thead>
@@ -352,8 +352,91 @@
                                     </tr>
                                 </tbody>
                             </table>
+    
+                            <!-- PAGINATION -->
+                            <nav aria-label="...">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <span class="page-link">Previous</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active">
+                                        <span class="page-link">
+                                            2
+                                            <span class="sr-only">(current)</span>
+                                        </span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- END OF PAGINATION -->
+    
                         </div>
-                        <div class="col-12"></div>
+                        <div class="col-12 col-xl-6">
+                                <h3 class="text-muted text-center mb-3">Recent Payments</h3>
+                                <table class="table text-center table-dark table-striped table-hover">
+                                        <thead>
+                                            <tr class="text-muted">
+                                                <th>#</th>
+                                                <th>Name</th>
+                                                <th>Price</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+            
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>Ken</td>
+                                                <td>$2500</td>
+                                                <td>25/02/2017</td>
+                                                <td><span class="badge badge-danger w-75 py-2">Rejected</span></td>
+                                            </tr>
+            
+                                            <tr>
+                                                <th>2</th>
+                                                <td>Raymond</td>
+                                                <td>$2500</td>
+                                                <td>25/02/2017</td>
+                                                <td><span class="badge badge-info w-75 py-2">Pending</span></td>
+                                            </tr>
+            
+                                            <tr>
+                                                <th>3</th>
+                                                <td>Wender</td>
+                                                <td>$2500</td>
+                                                <td>25/02/2017</td>
+                                                <td><span class="badge badge-warning w-75 py-2">in Progress</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <!-- PAGINATION -->
+                            <nav aria-label="...">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <span class="page-link">Previous</span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active">
+                                            <span class="page-link">
+                                                2
+                                                <span class="sr-only">(current)</span>
+                                            </span>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- END OF PAGINATION -->
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -362,27 +445,149 @@
     <!-- END OF TABLES -->
 
 
-    <!-- PAGINATION -->
-    <nav aria-label="...">
-  <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <span class="page-link">Previous</span>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item active">
-      <span class="page-link">
-        2
-        <span class="sr-only">(current)</span>
-      </span>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav>
+    <!-- Task, list and progress -->
 
-    <!-- END OF PAGINATION -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                    <div class="row mb-4">
+                        <div class="col-xl-6 col-12">
+                            <div class="bg-dark text-white p-4 rounded">
+                                <h4 class="mb-5">Technologies</h4>
+
+                                <h6 class="mb-3">Django</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+                                
+                                <h6 class="mb-3">React</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-3">Node</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+
+                                <h6 class="mb-3">Angula</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-12">
+                        <h4 class="text-muted p-3 mb-3">Tasks:</h4>
+                        <!-- TASK -->
+                        <div class="container-fluid bg-white">
+                            
+                            <div class="row py-3 mb-4 custom-left-red-border">
+                                <div class="col-1">
+                                    <input type="checkbox" name="" id="" checked>
+                                </div>
+                                <div class="col-sm-9 col-8">
+                                    Lorem ipsum dolor sit.
+                                </div>
+                                <div class="col-1">
+                                    <!-- select the position to place the tooltip using data-placement attr -->
+                                    <!-- set data-html="true" to change the size of the title with h tags -->
+                                    <a href="#" id="edit_tooltip" data-toggle="tooltip" data-placement="right" title="<h5>edit</h5>" data-html="true">
+                                        <i class="fas fa-edit fa-lg text-success mr-2"></i>
+                                    </a>
+                                </div>
+
+                                <div class="col-1">
+                                        <!-- select the position to place the tooltip using data-placement attr -->
+                                        <!-- set data-html="true" to change the size of the title with h tags -->
+                                        <a href="#" id="edit_tooltip" data-toggle="tooltip" data-placement="right" title="<h5>Delete</h5>" data-html="true">
+                                            <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                                        </a>
+                                </div>
+                            </div>                      
+
+                        </div>
+                        <!-- END OF TASK -->
+
+                          <!-- TASK -->
+                          <div class="container-fluid bg-white">
+                            
+                                <div class="row py-3 mb-4 custom-left-red-border">
+                                    <div class="col-1">
+                                        <input type="checkbox" name="" id="" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit.
+                                    </div>
+                                    <div class="col-1">
+                                        <!-- select the position to place the tooltip using data-placement attr -->
+                                        <!-- set data-html="true" to change the size of the title with h tags -->
+                                        <a href="#" id="edit_tooltip" data-toggle="tooltip" data-placement="right" title="<h5>edit</h5>" data-html="true">
+                                            <i class="fas fa-edit fa-lg text-success mr-2"></i>
+                                        </a>
+                                    </div>
+    
+                                    <div class="col-1">
+                                            <!-- select the position to place the tooltip using data-placement attr -->
+                                            <!-- set data-html="true" to change the size of the title with h tags -->
+                                            <a href="#" id="edit_tooltip" data-toggle="tooltip" data-placement="right" title="<h5>Delete</h5>" data-html="true">
+                                                <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                                            </a>
+                                    </div>
+                                </div>                      
+    
+                            </div>
+                            <!-- END OF TASK -->
+
+
+                              <!-- TASK -->
+                        <div class="container-fluid bg-white">
+                            
+                                <div class="row py-3 mb-4 custom-left-red-border">
+                                    <div class="col-1">
+                                        <input type="checkbox" name="" id="" checked>
+                                    </div>
+                                    <div class="col-sm-9 col-8">
+                                        Lorem ipsum dolor sit.
+                                    </div>
+                                    <div class="col-1">
+                                        <!-- select the position to place the tooltip using data-placement attr -->
+                                        <!-- set data-html="true" to change the size of the title with h tags -->
+                                        <a href="#" id="edit_tooltip" data-toggle="tooltip" data-placement="right" title="<h5>edit</h5>" data-html="true">
+                                            <i class="fas fa-edit fa-lg text-success mr-2"></i>
+                                        </a>
+                                    </div>
+    
+                                    <div class="col-1">
+                                            <!-- select the position to place the tooltip using data-placement attr -->
+                                            <!-- set data-html="true" to change the size of the title with h tags -->
+                                            <a href="#" id="edit_tooltip" data-toggle="tooltip" data-placement="right" title="<h5>Delete</h5>" data-html="true">
+                                                <i class="fas fa-trash-alt fa-lg text-danger"></i>
+                                            </a>
+                                    </div>
+                                </div>                      
+    
+                            </div>
+                            <!-- END OF TASK -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- END OF Task, list and progress -->
+    
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -112,3 +112,10 @@ body {
     box-shadow: 1px 2px 13px #999;
     transform: translateY(-1px);
 }
+
+
+/* TASK */
+
+.custom-left-red-border {
+    border-left: 3px solid #f66436;
+}
