@@ -3,6 +3,11 @@ body {
   background-color: #eee
 }
 
+.kleva-monoton {
+    font-family: 'Monoton', cursive;
+
+}
+
 .custom-sidebar {
     /* 100vh means it will be stretch top to bottomo of the view height */
     height: 100vh;
@@ -118,4 +123,13 @@ body {
 
 .custom-left-red-border {
     border-left: 3px solid #f66436;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #999
+}
+
+footer ul li a {
+    color: inherit;
 }
