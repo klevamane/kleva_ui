@@ -585,6 +585,98 @@
         </div>
     </section>
 
+    <!-- ACTIVITIES SECTION -->
+
+    <!-- Add accordion to the outer div as id, and add data-parent="#accordion" to each collapsable element -->
+    <!-- to make it an accordion -->
+    <!-- Add .show to any collapsable element to always view it upon page reload -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+                <div class="row">
+                    <div class="col-xl-7">
+                        <h4 class="text-muted mb-4">Recent Activities</h4>
+                        
+                        <div id ="accordion">
+                           
+                            <!-- CARD 1 -->
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse"
+                                        data-target="#activity-body">
+                                        <img src="images/cust1.jpeg" width="50px" alt="" class="mr-3 rounded">
+                                        Lebron posted a new comment
+                                    </button>
+                                </div>
+                                <div class="collapse show" id="activity-body" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam
+                                        nesciunt recusandae aspernatur doloremque adipisci repellat illo debitis aliquam
+                                        sunt!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- END OF CARD 1 -->
+                            
+
+                            <!-- CARD 2 -->
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse"
+                                        data-target="#activity-body2">
+                                        <img src="images/cust2.jpeg" width="50px" alt="" class="mr-3 rounded">
+                                        Philip posted a new comment
+                                    </button>
+                                </div>
+                                <div class="collapse" id="activity-body2" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam
+                                        nesciunt recusandae aspernatur doloremque adipisci repellat illo debitis aliquam
+                                        sunt!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- END OF CARD 2 -->
+
+
+                            <!-- CARD 3 -->
+
+                            <div class="card">
+                                    <div class="card-header">
+                                        <button class="btn btn-block bg-secondary text-light text-left" data-toggle="collapse"
+                                            data-target="#activity-body2">
+                                            <img src="images/cust4.jpeg" width="50px" alt="" class="mr-3 rounded">
+                                            Mandi posted a new comment
+                                        </button>
+                                    </div>
+                                    <div class="collapse" id="activity-body2" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam
+                                            nesciunt recusandae aspernatur doloremque adipisci repellat illo debitis aliquam
+                                            sunt!
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <!-- END OF CARD 3 -->
+                        </div>
+    
+    
+                    </div>
+                    <div class="col-xl-5">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF ACTIVITIES SECTION -->
+
    <!-- END OF Task, list and progress -->
     
     
