@@ -100,3 +100,15 @@ body {
         position: static;
     }
 }
+
+/* CARDS */
+
+.custom-card-common {
+    box-shadow: 1px 2px 5px #999;
+    transition: all .4s;
+}
+
+.custom-card-common:hover {
+    box-shadow: 1px 2px 13px #999;
+    transform: translateY(-1px);
+}
